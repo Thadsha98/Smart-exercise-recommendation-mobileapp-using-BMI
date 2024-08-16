@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".underweight">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textColor="@color/Velvet_Maroon"
+        android:text="Under Weight: BMI below 18.5"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifimg1"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/underweight01"
+        android:layout_below="@id/title"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifimg2"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/underweight02"
+        android:layout_below="@id/gifimg1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifimg3"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/underweight03"
+        android:layout_below="@id/gifimg5"/>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifimg4"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/underweight04"
+        android:layout_below="@id/gifimg3"/>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifimg5"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/underweight05"
+        android:layout_below="@id/title"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifimg6"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="200dp"
+        android:src="@drawable/underweight06"
+        android:layout_below="@id/gifimg3"/>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/gifimg6"
+        android:layout_marginLeft="230dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/Blue_Jay"
+        android:text="Logout"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>

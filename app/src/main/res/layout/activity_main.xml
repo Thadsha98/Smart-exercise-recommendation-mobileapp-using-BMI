@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleText"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="BMI Calculator"
+        android:fontFamily="times new roman"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/sky_blue"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleText"
+        android:layout_marginTop="20dp"
+        android:hint="Enter weight kg"
+        android:textColorHint="@color/Beetle_Green"
+        android:textColor="@color/violet"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize"
+        android:importantForAutofill="yes"/>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextWeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Enter height cm"
+        android:textColorHint="@color/Beetle_Green"
+        android:textColor="@color/violet"
+        android:importantForAutofill="yes"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btnCalBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editTextHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Teal"
+        android:text="Calculate BMI"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnCalBMI"
+        android:background="@color/Blue_Hosta"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/forselection"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textViewResult"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:background="@color/pale_turquoise"
+        android:text="Further you want exercise for your BMI status, click here"
+        android:textColor="@color/purple"
+        android:drawableLeft="@drawable/click_24"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnunderweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forselection"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/Turquoise"
+        android:text="Under Weight"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnhealthy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnunderweight"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:backgroundTint="@color/Turquoise"
+        android:text="Healthy"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnoverweight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forselection"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="200dp"
+        android:backgroundTint="@color/Turquoise"
+        android:text="Over Weight"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnobese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnoverweight"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="240dp"
+        android:backgroundTint="@color/Turquoise"
+        android:text="Obesity"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnobese"
+        android:layout_marginLeft="230dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Blue_Jay"
+        android:text="Logout"
+        android:textSize="20sp" />
+
+</RelativeLayout>
